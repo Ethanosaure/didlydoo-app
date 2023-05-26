@@ -1,28 +1,22 @@
+// import { validation } from "./validation.js";
+import { show_dialog } from "./show-dialog.js";
+let i = 0;
 export function add_event() {
-  const section = document.createElement("section");
-  const enter_form = document.createElement("h2");
-  enter_form.innerText = "Fill the blank";
-  const author = document.createElement("input");
-  author.setAttribute("type", "text");
-  author.setAttribute("placeholder", "author");
-  const title = document.createElement("input");
-  title.setAttribute("type", "text");
-  title.setAttribute("placeholder", "title");
-  const validate = document.createElement("button");
-  validate.setAttribute("type", "button");
-  validate.innerText = "Add";
-
-  const description = document.createElement("input");
-  description.setAttribute("type", "text");
-  description.setAttribute("placeholder", "decription");
-  const date = document.createElement("input");
-  date.setAttribute("type", "date");
-
-  section.appendChild(enter_form);
-  section.appendChild(author);
-  section.appendChild(title);
-  section.appendChild(description);
-  section.appendChild(date);
-  section.appendChild(validate);
-  document.body.appendChild(section);
+  show_dialog();
+  const author = document.querySelector("#dialog_author");
+  const title = document.querySelector("#dialog_title");
+  const description = document.querySelector("#dialog_description");
+  const date = document.querySelector("#dialog_date");
 }
+
+// fetch("http://localhost:5000/api/events/"),
+//   {
+//     method: "POST",
+
+//     section: JSON.stringify({
+//       author: author_input,
+//       dates: date_input,
+//       name: title_input,
+//       description: description_input,
+//     }),
+//   };
