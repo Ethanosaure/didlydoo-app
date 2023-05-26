@@ -7,6 +7,7 @@ export async function first_event() {
     const eventAuthor = event.author;
     const eventName = event.name;
     const eventDescription = event.description;
+    const eventId = event.id;
 
     const dates = event.dates;
     const dateHeaders = dates.map((date) => date.date);
@@ -40,10 +41,18 @@ export async function first_event() {
     description.classList.add("event_description");
     description.innerHTML = eventDescription;
 
+    const deleteBtn = document.createElement("button");
+    deleteBtn.innerHTML = "Delete event";
+    deleteBtn.classList.add("deleteBtn");
+    deleteBtn.dataset.eventId = eventId;
+
+
     section.appendChild(author);
     section.appendChild(title);
     section.appendChild(description);
     section.appendChild(editButton);
+    section.appendChild(deleteBtn);
+
 
     const table = document.createElement("table");
     table.classList.add("table");
