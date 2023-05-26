@@ -1,6 +1,6 @@
 import { first_event } from "./single-event.js";
 import { add_event } from "./add-event.js";
-import {deleteEvent} from "./deleteEvent.js";
+import { deleteEvent } from "./deleteEvent.js";
 
 await first_event();
 const button = document.querySelector("#add_event_btn");
@@ -14,4 +14,3 @@ deleteBtn.forEach((deleteBtn) => {
     deleteEvent(eventId);
   });
 });
-
