@@ -1,1 +1,6 @@
-/*# sourceMappingURL=style.css.map */
+table,
+td,
+tr {
+  border-collapse: collapse;
+  border: 1px solid black;
+}/*# sourceMappingURL=style.css.map */
