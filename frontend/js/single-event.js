@@ -7,7 +7,6 @@ export async function first_event() {
     const eventAuthor = event.author;
     const eventName = event.name;
     const eventDescription = event.description;
-    const eventId = event.id;
 
     const dates = event.dates;
     const dateHeaders = dates.map((date) => date.date);
@@ -46,13 +45,11 @@ export async function first_event() {
     deleteBtn.classList.add("deleteBtn");
     deleteBtn.dataset.eventId = eventId;
 
-
     section.appendChild(author);
     section.appendChild(title);
     section.appendChild(description);
     section.appendChild(editButton);
     section.appendChild(deleteBtn);
-
 
     const table = document.createElement("table");
     table.classList.add("table");
@@ -138,7 +135,7 @@ export async function first_event() {
     fetch(`http://localhost:5000/api/events/${eventId}`, {
       method: "PATCH",
       headers: {
-        "content-type": "application/json",
+        "Content-type": "application/json; charset=UTF-8",
       },
       body: JSON.stringify(updatedEvent),
     })
