@@ -16,6 +16,8 @@ export async function first_event() {
     section.classList.add("event_container");
     const sectionElement = section;
 
+    /// EDIT ///
+
     const editButton = document.createElement("button");
     editButton.classList.add("edit_btn");
     editButton.setAttribute("type", "button");
@@ -23,6 +25,8 @@ export async function first_event() {
     editButton.addEventListener("click", () => {
       enableEditingMode(sectionElement, eventId);
     });
+
+    /// EDIT ///
 
     const author = document.createElement("h2");
     author.classList.add("event_author");
@@ -88,6 +92,8 @@ export async function first_event() {
     document.body.appendChild(section);
   });
 
+  /// EDIT ///
+
   function enableEditingMode(section, eventId) {
     const author = section.querySelector(".event_author");
     const title = section.querySelector(".event_title");
@@ -134,3 +140,5 @@ export async function first_event() {
       .catch((error) => console.error("Error updating event:", error));
   }
 }
+
+/// EDIT ////
