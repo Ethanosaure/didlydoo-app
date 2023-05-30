@@ -1,3 +1,4 @@
+import { add_guest } from "./adding-guest-function.js";
 export async function first_event() {
   const response = await fetch("http://localhost:5000/api/events/");
   const json = await response.json();
@@ -28,6 +29,15 @@ export async function first_event() {
 
     /// EDIT ///
 
+    const attendees_input = document.createElement("input");
+    attendees_input.setAttribute("type", "text");
+    attendees_input.setAttribute("placeholder", "enter a guest");
+    attendees_input.addEventListener("keypress", (event) => {
+      if (event.key === "Enter") {
+        add_guest(eventId, attendees_input);
+      }
+    });
+
     const author = document.createElement("h2");
     author.classList.add("event_author");
     author.innerHTML = eventAuthor;
@@ -50,6 +60,7 @@ export async function first_event() {
     section.appendChild(description);
     section.appendChild(editButton);
     section.appendChild(deleteBtn);
+    section.appendChild(attendees_input);
 
     const table = document.createElement("table");
     table.classList.add("table");
