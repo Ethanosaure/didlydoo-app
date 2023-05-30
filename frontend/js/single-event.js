@@ -2,7 +2,6 @@ export async function first_event() {
   const response = await fetch("http://localhost:5000/api/events/");
   const json = await response.json();
   console.log(json);
-
   json.forEach((event) => {
     const eventAuthor = event.author;
     const eventName = event.name;
@@ -60,6 +59,7 @@ export async function first_event() {
 
     dateHeaders.forEach((dateHeader) => {
       const dateColumn = document.createElement("th");
+      dateColumn.classList.add("date");
       dateColumn.innerHTML = dateHeader;
       table.appendChild(dateColumn);
     });
@@ -82,11 +82,13 @@ export async function first_event() {
       const tr = document.createElement("tr");
 
       const td = document.createElement("td");
+      td.classList.add("attendees");
       td.innerHTML = name;
       tr.appendChild(td);
 
       availability.forEach((available) => {
         const availabilityCell = document.createElement("td");
+        availabilityCell.classList.add("attendees_availability");
         availabilityCell.innerHTML = available;
         tr.appendChild(availabilityCell);
       });
