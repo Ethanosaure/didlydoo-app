@@ -1,4 +1,4 @@
-const array = [];
+export const array = [];
 export function adding_more_date() {
   const date_input = document.querySelector("#dialog_date");
   const output = document.querySelector("output");
@@ -8,4 +8,5 @@ export function adding_more_date() {
   }
   add_date();
   output.textContent = array;
+  console.log(array);
 }
