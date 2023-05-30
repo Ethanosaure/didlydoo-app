@@ -95,9 +95,18 @@
       "2023-07-27"
     ],
     "created_at": "2023-05-30T09:45:49.331Z",
-    "num_modification": 0,
-    "last_modification": "2023-05-30T09:45:49.331Z",
-    "attendees": []
+    "num_modification": 1,
+    "last_modification": "2023-05-30T14:47:00.987Z",
+    "attendees": [
+      {
+        "name": "gugus",
+        "dates": []
+      },
+      {
+        "name": "albert",
+        "dates": []
+      }
+    ]
   },
   {
     "id": "f8826ab9563e",
@@ -149,7 +158,12 @@
     "created_at": "2023-05-30T09:22:54.172Z",
     "num_modification": 0,
     "last_modification": "2023-05-30T09:22:54.172Z",
-    "attendees": []
+    "attendees": [
+      {
+        "name": "gasron",
+        "dates": []
+      }
+    ]
   },
   {
     "id": "91cfe8853553",

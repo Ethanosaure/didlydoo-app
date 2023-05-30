@@ -4,7 +4,7 @@ export async function add_guest(eventId, attendees_input) {
   try {
     const response = await fetch(`http://localhost:5000/api/events/${eventId}`);
     const json = await response.json();
-    
+
     json.dates.forEach((element) => {
       const newAttend = {
         date: element.date,
@@ -12,10 +12,8 @@ export async function add_guest(eventId, attendees_input) {
       };
       array.push(newAttend);
     });
-    
-    console.log(array[0].date);
 
-    const postResponse = await fetch(`http://localhost:5000/api/events/${eventId}/attend/`, {
+    await fetch(`http://localhost:5000/api/events/${eventId}/attend/`, {
       method: "POST",
       headers: {
         "Content-type": "application/json; charset=UTF-8",
@@ -28,7 +26,6 @@ export async function add_guest(eventId, attendees_input) {
         })),
       }),
     });
-    
   } catch (err) {
     console.log(err);
     throw new Error(err);
