@@ -1,6 +1,9 @@
+import { adding_more_date } from "./adding_more_date.js";
 import { POST_fetch } from "./function-POST.js";
 import { show_dialog } from "./show-dialog.js";
 
+const add_more_date = document.querySelector("#add_more_date");
+add_more_date.addEventListener("click", adding_more_date);
 const author = document.querySelector("#dialog_author");
 const title = document.querySelector("#dialog_title");
 const description = document.querySelector("#dialog_description");
