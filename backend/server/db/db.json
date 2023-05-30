@@ -1,5 +1,6 @@
 [
   {
+
     "id": "70e22cc76a20",
     "name": "manger",
     "author": "Gaston",
@@ -10,6 +11,31 @@
     "created_at": "2023-05-30T08:45:34.244Z",
     "num_modification": 0,
     "last_modification": "2023-05-30T08:45:34.244Z",
+
+    "id": "ec52fea9d553",
+    "name": "nous",
+    "author": "moi",
+    "description": "tous",
+    "dates": [
+      "2023-06-10"
+    ],
+    "created_at": "2023-05-30T09:22:54.172Z",
+    "num_modification": 0,
+    "last_modification": "2023-05-30T09:22:54.172Z",
+    "attendees": []
+  },
+  {
+    "id": "91cfe8853553",
+    "name": "nous",
+    "author": "moi",
+    "description": "tous",
+    "dates": [
+      "2023-05-31"
+    ],
+    "created_at": "2023-05-30T08:48:16.238Z",
+    "num_modification": 0,
+    "last_modification": "2023-05-30T08:48:16.238Z",
+
     "attendees": []
   },
   {
