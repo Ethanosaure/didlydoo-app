@@ -14,7 +14,7 @@ export async function POST_fetch() {
       name: title.value,
       author: author.value,
       description: description.value,
-      dates: [date.value, [attendees.value]],
+      dates: [date.value],
     }),
   })
     .then((res) => res.json())
