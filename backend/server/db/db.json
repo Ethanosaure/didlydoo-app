@@ -11,7 +11,28 @@
     "created_at": "2023-05-30T12:35:02.520Z",
     "num_modification": 1,
     "last_modification": "2023-05-30T12:35:21.220Z",
-    "attendees": []
+    "attendees": [
+      {
+        "name": "Gaston",
+        "dates": []
+      },
+      {
+        "name": "fhsdjfhdsjfsdkjf",
+        "dates": []
+      },
+      {
+        "name": "ahhkjjjjjjjj",
+        "dates": []
+      },
+      {
+        "name": "fffffff",
+        "dates": []
+      },
+      {
+        "name": "rrrrrrrrrrrr",
+        "dates": []
+      }
+    ]
   },
   {
     "id": "19f2720d2156",
@@ -27,7 +48,12 @@
     "created_at": "2023-05-30T11:41:08.703Z",
     "num_modification": 2,
     "last_modification": "2023-05-30T11:41:13.956Z",
-    "attendees": []
+    "attendees": [
+      {
+        "name": "zzzzzzzzzzzzz",
+        "dates": []
+      }
+    ]
   },
   {
     "id": "66a12dde38a3",
