@@ -1,10 +1,23 @@
 @import './reset.css';
+section.event_container {
+  position: relative;
+  display: inline-block;
+  align-self: center;
+  margin: 40px;
+}
+
+form {
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 200px;
+}
+
 table,
 td,
 tr,
 th {
   border-collapse: collapse;
-  border: 1px solid black;
   padding: 10px;
   text-align: center;
 }
@@ -13,11 +26,6 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
-}
-
-tr:nth-child(even) {
-  background-color: #f2f2f2;
-  border-collapse: collapse;
 }
 
 th {
@@ -30,12 +38,19 @@ th:first-of-type {
   border: none;
 }
 
+td {
+  border: 2px solid #4d5694;
+}
+
 body {
   background-color: rgb(222, 200, 169);
   font-family: Arial, Helvetica, sans-serif;
-  display: flex;
+  display: inline-block;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  font-weight: bold;
+  color: #4d5694;
 }
 
 h1 {
@@ -43,9 +58,9 @@ h1 {
   font-size: 150px;
   color: #4d5694;
   text-align: center;
-  margin: 25px 0;
-  padding: 10px;
-  border-radius: 40px 10px;
+  margin: 25px;
+  padding: 30px;
+  border-radius: 60px 10px;
   box-shadow: 0 8px 16px rgba(67, 101, 224, 0.1);
 }
 
@@ -56,9 +71,7 @@ h2.event_author {
   text-align: center;
   margin: 20px 0;
   padding: 5px;
-  border-radius: 8px;
-  background-color: #f2f2f2;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block; /* Add this line */
 }
 
 h2.event_title {
@@ -68,57 +81,36 @@ h2.event_title {
   text-align: center;
   margin: 20px 0;
   padding: 5px;
-  border-radius: 8px;
-  background-color: #f2f2f2;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block; /* Add this line */
 }
 
 p.event_description {
   font-family: Arial, sans-serif;
   font-size: 24px;
   color: #4d5694;
-  text-align: center;
+  text-align: left;
   margin: 20px 0;
   padding: 5px;
-  border-radius: 8px;
-  background-color: #f2f2f2;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-form {
-  align-self: flex-end;
-  margin-right: 20px;
 }
 
 #add_event_btn {
-  align-items: center;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
   background-image: radial-gradient(100% 100% at 100% 0, #94afda 0, #5765d2 100%);
   border: 0;
   border-radius: 30px;
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
-  box-sizing: border-box;
   color: #fff;
   cursor: pointer;
-  display: inline-flex;
   font-family: "JetBrains Mono", monospace;
   height: 48px;
-  justify-content: center;
-  line-height: 1;
   list-style: none;
-  overflow: hidden;
   padding-left: 16px;
   padding-right: 16px;
-  position: relative;
-  text-align: left;
   text-decoration: none;
   transition: box-shadow 0.15s, transform 0.15s;
   touch-action: manipulation;
-  white-space: nowrap;
   will-change: box-shadow, transform;
-  font-size: 30px;
+  font-size: 20px;
+  margin: 20px;
 }
 
 #add_event_btn:focus {
@@ -136,6 +128,9 @@ form {
 }
 
 .deleteBtn {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
   border: 0;
   border-radius: 12px;
@@ -143,20 +138,13 @@ form {
   cursor: pointer;
   display: inline-block;
   font-family: system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  height: 30px;
+  font-size: 15px;
+  height: 25px;
   font-weight: 500;
-  line-height: 30px;
   outline: transparent;
-  padding: 0 1rem;
   text-align: center;
   text-decoration: none;
   transition: box-shadow 0.2s ease-in-out;
-  -moz-user-select: none;
-       user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
 }
 
 .deleteBtn:not([disabled]):focus {
@@ -168,28 +156,40 @@ form {
 }
 
 .edit_btn {
-  height: 30px;
-  padding: 8px 16px;
-  background-color: #5765d2;
-  color: #fff;
-  border: none;
+  margin: 15px;
+  background: linear-gradient(to bottom right, #5765d2, #8997d7);
+  border: 0;
   border-radius: 12px;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
+  color: #FFFFFF;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  display: inline-block;
+  font-family: system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  height: 30px;
+  font-weight: 500;
+  line-height: 10px;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.2s ease-in-out;
+  touch-action: manipulation;
+  white-space: nowrap;
 }
 
-.edit_btn:hover {
-  background-color: #4d5694;
+.edit_btn:not([disabled]):focus {
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem rgba(62, 79, 206, 0.5), 0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
 }
 
-.edit_btn:active {
-  background-color: #3c4475;
-  transform: translateY(2px);
+.edit_btn:not([disabled]):hover {
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem rgba(71, 100, 207, 0.5), 0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
 }
 
 input {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 8px;
   border: 1px solid #b4ccf4;
   border-radius: 10px;
