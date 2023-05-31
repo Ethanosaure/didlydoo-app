@@ -8,7 +8,6 @@ export async function POST_fetch() {
     date.push(element);
   });
   console.log(date);
-  const event = {};
   await fetch("http://localhost:5000/api/events/", {
     method: "POST",
     headers: {
