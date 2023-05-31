@@ -1,5 +1,5 @@
 
-# ✨ Dark Kitchen✨
+# ✨ Didlydoo✨
 
 > ## Hi ! We are Delphine, Emilien, Ethan
 > 
