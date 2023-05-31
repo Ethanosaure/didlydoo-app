@@ -4,10 +4,10 @@ export async function editAvailability() {
   );
   for (let i = 0; i < attendees_availability.length; i++) {
     attendees_availability[i].addEventListener("click", function () {
-      if (this.innerText === "True" || this.innerText === "V") {
-        this.innerText = "X";
+      if (this.innerText === "True") {
+        this.innerText = "False";
       } else {
-        this.innerText = "V";
+        this.innerText = "True";
       }
     });
   }

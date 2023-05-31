@@ -15,6 +15,7 @@ export async function first_event() {
 
     const section = document.createElement("section");
     section.classList.add("event_container");
+    section.setAttribute("id", `${eventId}`);
     const sectionElement = section;
 
     const validation = document.createElement("button");
