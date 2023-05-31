@@ -160,9 +160,10 @@
     "attendees": []
   },
   {
+
     "id": "1",
-    "name": "My oui\n",
-    "description": "I am going to be 16, let us all party together! Help me pick a date so we can go together",
+    "name": "My oui",
+    "description": "I am going to be6t usll prty together! Help me pick a date so we can go together",
     "author": "John die",
     "dates": [
       "2022-03-17",
@@ -173,20 +174,7 @@
     "attendees": [
       {
         "name": "Michou",
-        "dates": [
-          {
-            "date": "2022-03-17",
-            "available": true
-          },
-          {
-            "date": "2022-03-18",
-            "available": false
-          },
-          {
-            "date": "2022-03-21",
-            "available": true
-          }
-        ]
+        "dates": []
       },
       {
         "name": "Jean-Daniel",
@@ -203,8 +191,8 @@
       }
     ],
     "created_at": "2021-11-15T00:00",
-    "num_modification": 11,
-    "last_modification": "2023-05-26T12:27:05.541Z"
+    "num_modification": 18,
+    "last_modification": "2023-05-30T13:15:48.587Z"
   },
   {
     "id": "2",
