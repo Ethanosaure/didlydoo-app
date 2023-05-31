@@ -1,5 +1,6 @@
 @import './reset.css';
 
+$primary-color: #4d5694;
 
 section.event_container {
   position: relative;
@@ -7,6 +8,7 @@ section.event_container {
   align-self: center;
   margin: 40px;
 }
+
 form {
   justify-content: center;
   align-items: center;
@@ -14,14 +16,12 @@ form {
   height: 200px;
 }
 
-table,
-td,
-tr,
-th {
+table, td, tr, th {
   border-collapse: collapse;
   padding: 10px;
   text-align: center;
 }
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -29,16 +29,19 @@ table {
 }
 
 th {
-  background-color: #4d5694;
-  color: #fff;;
+  background-color: $primary-color;
+  color: #fff;
 }
+
 th:first-of-type {
   background-color: transparent;
   border: none;
 }
+
 td {
-  border: 2px solid #4d5694;
+  border: 2px solid $primary-color;
 }
+
 body {
   background-color: rgb(222, 200, 169);
   font-family: Arial, Helvetica, sans-serif;
@@ -47,45 +50,49 @@ body {
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  color: #4d5694;
+  color: $primary-color;
 }
+
 h1 {
   font-family: Arial, sans-serif;
   font-size: 150px;
-  color: #4d5694;
+  color: $primary-color;
   text-align: center;
   margin: 25px;
   padding: 30px;
   border-radius: 60px 10px;
   box-shadow: 0 8px 16px rgba(67, 101, 224, 0.1);
 }
+
 h2.event_author {
   font-family: Arial, sans-serif;
   font-size: 50px;
-  color: #4d5694;
+  color: $primary-color;
   text-align: center;
   margin: 20px 0;
   padding: 5px;
-  display: inline-block; /* Add this line */
+  display: inline-block;
 }
 
 h2.event_title {
   font-family: Arial, sans-serif;
   font-size: 24px;
-  color: #4d5694;
+  color: $primary-color;
   text-align: center;
   margin: 20px 0;
   padding: 5px;
-  display: inline-block; /* Add this line */
+  display: inline-block;
 }
+
 p.event_description {
-font-family: Arial, sans-serif;
-font-size: 24px;
-color: #4d5694;
-text-align: left;
-margin: 20px 0;
-padding: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  color: $primary-color;
+  text-align: left;
+  margin: 20px 0;
+  padding: 5px;
 }
+
 #add_event_btn {
   background-image: radial-gradient(100% 100% at 100% 0, #94afda 0, #5765d2 100%);
   border: 0;
@@ -130,7 +137,7 @@ padding: 5px;
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
-  font-family: system-ui,"Segoe UI", Helvetica,Arial,sans-serif;
+  font-family: system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
   font-size: 15px;
   height: 25px;
   font-weight: 500;
@@ -147,6 +154,7 @@ padding: 5px;
 .deleteBtn:not([disabled]):hover {
   box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
 }
+
 .edit_btn {
   margin: 15px;
   background: linear-gradient(to bottom right, #5765d2, #8997d7);
@@ -155,7 +163,7 @@ padding: 5px;
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
-  font-family: system-ui,"Segoe UI", Helvetica,Arial,sans-serif;
+  font-family: system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
   font-size: 15px;
   height: 30px;
   font-weight: 500;
@@ -168,6 +176,7 @@ padding: 5px;
   touch-action: manipulation;
   white-space: nowrap;
 }
+
 .edit_btn:not([disabled]):focus {
   box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(62, 79, 206, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
 }
@@ -175,7 +184,6 @@ padding: 5px;
 .edit_btn:not([disabled]):hover {
   box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(71, 100, 207, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
 }
-
 
 input {
   position: absolute;

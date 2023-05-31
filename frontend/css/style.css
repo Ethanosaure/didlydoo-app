@@ -13,10 +13,7 @@ form {
   height: 200px;
 }
 
-table,
-td,
-tr,
-th {
+table, td, tr, th {
   border-collapse: collapse;
   padding: 10px;
   text-align: center;
@@ -71,7 +68,7 @@ h2.event_author {
   text-align: center;
   margin: 20px 0;
   padding: 5px;
-  display: inline-block; /* Add this line */
+  display: inline-block;
 }
 
 h2.event_title {
@@ -81,7 +78,7 @@ h2.event_title {
   text-align: center;
   margin: 20px 0;
   padding: 5px;
-  display: inline-block; /* Add this line */
+  display: inline-block;
 }
 
 p.event_description {
