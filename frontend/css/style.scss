@@ -1,7 +1,194 @@
+@import './reset.css';
+
 table,
 td,
 tr,
 th {
   border-collapse: collapse;
   border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #4d5694;
+  color: #fff;
+}
+th:first-of-type {
+  background-color: transparent;
+  border: none;
+}
+body {
+  background-color: rgb(222, 200, 169);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 150px;
+  color: #4d5694;
+  text-align: center;
+  margin: 25px 0;
+  padding: 10px;
+  border-radius: 40px 10px;
+  box-shadow: 0 8px 16px rgba(67, 101, 224, 0.1);
+}
+h2.event_author {
+  font-family: Arial, sans-serif;
+  font-size: 50px;
+  color: #4d5694;
+  text-align: center;
+  margin: 20px 0;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h2.event_title {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  color: #4d5694;
+  text-align: center;
+  margin: 20px 0;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+p.event_description {
+font-family: Arial, sans-serif;
+font-size: 24px;
+color: #4d5694;
+text-align: center;
+margin: 20px 0;
+padding: 5px;
+border-radius: 8px;
+background-color: #f2f2f2;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  align-self: flex-end;
+  margin-right: 20px;
+}
+#add_event_btn {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #94afda 0, #5765d2 100%);
+  border: 0;
+  border-radius: 30px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s, transform .15s;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 30px;
+}
+
+#add_event_btn:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+#add_event_btn:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+#add_event_btn:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.deleteBtn {
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui,"Segoe UI", Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  height: 30px;
+  font-weight: 500;
+  line-height: 30px;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.deleteBtn:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.deleteBtn:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+.edit_btn {
+  height: 30px;
+  padding: 8px 16px;
+  background-color: #5765d2;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit_btn:hover {
+  background-color: #4d5694;
+}
+
+.edit_btn:active {
+  background-color: #3c4475;
+  transform: translateY(2px);
+}
+
+
+input {
+  padding: 8px;
+  border: 1px solid #b4ccf4;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #3c4fe0;
+  box-shadow: 0 0 3px rgba(60, 79, 224, 0.5);
 }
