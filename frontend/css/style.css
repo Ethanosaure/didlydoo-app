@@ -6,11 +6,30 @@ section.event_container {
   margin: 40px;
 }
 
-form {
-  justify-content: center;
-  align-items: center;
-  width: 300px;
+#dialogElm {
   height: 200px;
+  width: 600px;
+}
+
+#dialog_author {
+  margin-bottom: 170px;
+}
+
+#dialog_title {
+  margin-bottom: 130px;
+}
+
+#dialog_description {
+  margin-bottom: 90px;
+}
+
+#dialog_date {
+  margin-bottom: 45px;
+}
+
+#add_more_date {
+  left: 100px;
+  margin-bottom: 40px;
 }
 
 table, td, tr, th {
