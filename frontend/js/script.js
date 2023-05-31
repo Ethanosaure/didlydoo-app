@@ -16,4 +16,4 @@ deleteBtn.forEach((deleteBtn) => {
   });
 });
 
-editAvailability();
+await editAvailability();

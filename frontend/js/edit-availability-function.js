@@ -1,23 +1,32 @@
 export async function availability(eventId) {
-  let attendees_availability = document.querySelector(
+  const attendees_availability = document.querySelectorAll(
     ".attendees_availability"
   );
+  const date = document.querySelectorAll(".date");
+  const attend = document.querySelectorAll(".attendees");
+  const attendValues = Array.from(attend).map((element) => element.textContent);
 
-  const date = document.querySelector(".date");
-  const attend = document.querySelector(".attendees");
-  const attendValue = attend.textContent;
-  const availabilityText = attendees_availability.textContent;
-  const available = availabilityText.toLowerCase() === "False";
+  attendees_availability.forEach((availability) => {
+    const availabilityText = availability.textContent;
+    const available = availabilityText === "True";
 
-  const updatedAvailability = {
-    name: attendValue,
-    dates: [
-      {
-        date: new Date(date.textContent).toISOString(),
-        available: available,
-      },
-    ],
-  };
+    const dateValues = Array.from(date).map((element) =>
+      new Date(element.textContent).toISOString()
+    );
+
+    let updatedAvailability = {
+      name: attendValues.join(", "),
+      dates: [
+        {
+          date: dateValues.map((element) => new Date(element).toISOString()),
+          available: available,
+        },
+      ],
+    };
+    console.log(updatedAvailability);
+    return updatedAvailability;
+  });
+
   await fetch(`http://localhost:5000/api/events/${eventId}/attend/`, {
     method: "PATCH",
     headers: { "Content-type": "application/json; charset=UTF-8" },
