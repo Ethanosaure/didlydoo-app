@@ -8,27 +8,37 @@ section.event_container {
   align-self: center;
   margin: 40px;
 }
-#dialogElm{
+
+#dialogElm {
   height: 200px;
   width: 600px;
 }
-#dialog_author{
+
+#dialog_author {
   margin-bottom: 170px;
 }
+
 #dialog_title {
   margin-bottom: 130px;
 }
+
 #dialog_description {
   margin-bottom: 90px;
 }
+
 #dialog_date {
   margin-bottom: 45px;
 }
+
 #add_more_date {
   left: 100px;
   margin-bottom: 40px;
 }
-table, td, tr, th {
+
+table,
+td,
+tr,
+th {
   border-collapse: collapse;
   padding: 10px;
   text-align: center;
@@ -95,6 +105,7 @@ h2.event_title {
   padding: 5px;
   display: inline-block;
 }
+
 p.event_description {
   font-family: Arial, sans-serif;
   font-style: italic;
@@ -220,7 +231,7 @@ input {
   transform: translateX(-50%);
   padding: 8px;
   border: 2px solid #b4ccf4;
-  border-radius: 40px 10px;
+  border-radius: 20px 10px;
   font-family: Arial, sans-serif;
   font-size: 14px;
 }
