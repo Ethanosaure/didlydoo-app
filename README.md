@@ -31,7 +31,7 @@ Bonus :
 <a href="https://linkedin.com/in/gfdghshg" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="gfdghshg" height="30" width="40" /></a>  
 </p> 
 [Delphine Lecorney](https://www.linkedin.com/in/delphine-lecorney-539781242/)
-[Emilien Volkaert](https://www.linkedin.com/in/emilien-volkaert/ "Emilien Volkaert")
+[Emilien Volkaert](https://www.linkedin.com/in/emilien-volkaert/)
 [Ethan Dias Marques](https://www.linkedin.com/in/ethan-dias-marques)
 
 <h3 align="left">Languages and Tools:</h3>  
