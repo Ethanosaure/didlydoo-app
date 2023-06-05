@@ -4,16 +4,16 @@
 > ## Hi ! We are Delphine, Emilien, Ethan
 > 
 > 
-## Creation of an online didlydoo.
+## Creation of an online didlydoo-app.
 
-####  Tasks is to :
+####  Tasks:
 
-🌱 Display all the events, including everyone's availability
-🌱 Allow users to create events
-🌱 Allow users to add their availability to an existing event
-🌱 Edit an event name/description/author
-🌱 Delete an event
-🌱 You must validate your inputs before sending the data to your backend, inputs required must be filed and shorter than 256 characters. If it's not the case you don't send the request and display the appropriate error below the input.
+🌱 Display all the events, including everyone's availability <br>
+🌱 Allow users to create events <br>
+🌱 Allow users to add their availability to an existing event<br>
+🌱 Edit an event name/description/author<br>
+🌱 Delete an event<br>
+🌱 You must validate your inputs before sending the data to your backend, inputs required must be filed and shorter than 256 characters. If it's not the case you don't send the request and display the appropriate error below the input.<br>
 Bonus :
 
 - 🔭 **Project to be completed in 4 days May 2023)**  
@@ -32,7 +32,7 @@ Bonus :
 </p> 
 [Delphine Lecorney](https://www.linkedin.com/in/delphine-lecorney-539781242/)
 [Emilien Volkaert](https://www.linkedin.com/in/emilien-volkaert/ "Emilien Volkaert")
-[Ethan Dias Marques](https://www.linkedin.com/in/ethan-dias-marques-75235326a/)
+[Ethan Dias Marques](https://www.linkedin.com/in/ethan-dias-marques)
 
 <h3 align="left">Languages and Tools:</h3>  
 <p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://sass-lang.com" target="_blank" rel="noreferrer">  </a> </p>
